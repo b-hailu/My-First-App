@@ -34,6 +34,17 @@ namespace classwork
           Console.WriteLine(myTypes.LongFromInt(5600));
         }
 
+        {
+
+            // created and objects instance of House called myHouse
+            House myHouse = new House();
+            // this sets the value of Red to the object
+            
+        
+
+
+        }
+
 
 
     }
