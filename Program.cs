@@ -1,4 +1,5 @@
 ﻿using System;
+ using Lessons;
 
 namespace classwork
 {
@@ -17,12 +18,23 @@ namespace classwork
             myPrinter.ConnectCable = "connect";
             myPrinter.Cablewired();
             Console.WriteLine(myPrinter.ConnectCable);
-    
+            MyNumericExamples();
 
 
 
 
         }
+        static void MyNumericExamples()
+        {
+          NumericTypes myTypes = new NumericTypes();
+          myTypes.GetSomeType();
+          int something = myTypes.ConvertFloatToInt(35.9F);
+          Console.WriteLine(something);
+
+          Console.WriteLine(myTypes.LongFromInt(5600));
+        }
+
+
 
     }
 }
