@@ -32,9 +32,22 @@ namespace classwork
           Console.WriteLine(something);
 
           Console.WriteLine(myTypes.LongFromInt(5600));
+          myTypes.BasicMath();
+          myTypes.CheckOperators();
+          myTypes.IncrementDecrement();
+          myTypes.SpecialValues();
+          myTypes.comparisonOperators();
+          
+
+        }
+        static void otherNumericExamples()
+        {
+           NumericTypes myTypes = new NumericTypes();
+           myTypes.OtherOperators();
+           
         }
 
-        {
+        
 
             // created and objects instance of House called myHouse
             House myHouse = new House();
@@ -48,4 +61,4 @@ namespace classwork
 
 
     }
-}
+
