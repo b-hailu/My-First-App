@@ -14,16 +14,31 @@ namespace classwork
             Console.WriteLine("Hello World!");
             /* console is a class and writeline is a method with a 
             parameter*/
-            printer myPrinter= new printer();
-            myPrinter.ConnectCable = "connect";
-            myPrinter.Cablewired();
-            Console.WriteLine(myPrinter.ConnectCable);
-            MyNumericExamples();
-
-
-
+            //printer myPrinter= new printer();
+            //myPrinter.ConnectCable = "connect";
+            //myPrinter.Cablewired();
+            //Console.WriteLine(myPrinter.ConnectCable);
+            //MyNumericExamples();
+            MyStringExample();
 
         }
+        static void MyStringExample()
+        {
+           StringTypes myTypes = new StringTypes();
+           myTypes.SampleString();
+           myTypes.addString();
+           string words = myTypes.StringBuilderExample("Hello","c Sharp","Class");
+
+           Console.WriteLine(words);
+           myTypes.ChartTypeExample();
+           myTypes.EscapeExample();
+           myTypes.placeHolderExample();
+           myTypes.ArraySample();
+           myTypes.MyHouseArray();
+           myTypes.multiArraySample();
+        }
+    
+        
         static void MyNumericExamples()
         {
           NumericTypes myTypes = new NumericTypes();
@@ -51,6 +66,9 @@ namespace classwork
 
             // created and objects instance of House called myHouse
             House myHouse = new House();
+            House house1 = new House ();
+            
+
             // this sets the value of Red to the object
             
         
