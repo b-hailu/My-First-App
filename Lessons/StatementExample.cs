@@ -158,14 +158,77 @@ namespace Lessons
                     goto default;
                 case "Monday":
                 case "Tuesday":
-                      return "Test Something Tuesday";
+                    return "Test Something Tuesday";
                 default:
-                      return "Test Nothing";
+                    return "Test Nothing";
             }
         }
 
+        public void SampleDays(DaysOfWeek days)
+
+        {
+            switch (days)
+            {
+                case DaysOfWeek.Fri:
+                case DaysOfWeek.Sat:
+                case DaysOfWeek.Sun:
+                    Console.WriteLine("The weekned is Here");
+                    break;
+                case DaysOfWeek.Mon:
+                case DaysOfWeek.Tue:
+                case DaysOfWeek.Wed:
+                case DaysOfWeek.Thur:
+                    Console.WriteLine("Still at work");
+                    break;
+
+            }
+
+        }
+
+        public void SampleYear(MonthsOfYear months)
+        {
+
+            switch (months)
+
+            {
+                case MonthsOfYear.Jan:
+                case MonthsOfYear.Feb:
+                case MonthsOfYear.Mar:
+                case MonthsOfYear.Apr:
+                case MonthsOfYear.May:
+                    Console.WriteLine("Spring is here");
+
+                    break;
+
+                case MonthsOfYear.Jun:
+                case MonthsOfYear.Jul:
+                case MonthsOfYear.Aug:
+                    Console.WriteLine("Summer is here");
+                    break;
+                case MonthsOfYear.Sep:
+                case MonthsOfYear.Oct:
+                case MonthsOfYear.Nov:
+                    Console.WriteLine("Fall is here" + "I am happy" + "The winter is going by by");
+                    break;
+
+
+
+            }
+
+        }
+        public void MonthsOfYear1()
+        {
+
+        }
+
+
     }
+
+
 }
+
+
+
 
 
 

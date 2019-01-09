@@ -21,29 +21,57 @@ namespace classwork
             //Console.WriteLine(myPrinter.ConnectCable);
             //MyNumericExamples();
             //MyStringExample();
-            StatementSamples();
-        
+            //StatementSamples();
+            HouseSample();
+            //StructSample();
+
+
 
         }
+        static void StructSample()
+
+        {
+            BookSample bookSample = new BookSample(4.99m, "Zombie Fallout", "Mark Tufo");
+            Console.WriteLine("The book " + bookSample.title + " by " + bookSample.author + " is $" + bookSample.price);
+
+
+        }
+        static void HouseSample()
+
+        {
+            House MyHouse = new House("concrete", "triple pane");
+
+            Console.WriteLine(MyHouse.PaintDoor);
+            Console.WriteLine(MyHouse.Foundation);
+            MyHouse.OpenDoor(true);
+
+
+        }
+
         static void StatementSamples()
         {
-           StatementExample se = new StatementExample();
-           //se.SampleIf();
-           //se.SampleIfElse();
-           //se.sampleIfChain();
-           //se.SampleIfOr();
-           //se.SampleIfAnd();
-           //se.SampleConditional();
-           //se.sampleSwitch(10);
-           //se.sampleSwitch(15);
-           //se.sampleSwitch(1);
-           //se.SampleWhile();
-           //se.SampleDoWhile();
-           se.SampleFor();
-           se.Foreach();
-           string mystring = se.JumpStatementExample("Sunday");
-           Console.WriteLine(mystring);
-           bottlessong();
+            StatementExample se = new StatementExample();
+            //se.SampleIf();
+            //se.SampleIfElse();
+            //se.sampleIfChain();
+            //se.SampleIfOr();
+            //se.SampleIfAnd();
+            //se.SampleConditional();
+            //se.sampleSwitch(10);
+            //se.sampleSwitch(15);
+            //se.sampleSwitch(1);
+            //se.SampleWhile();
+            //se.SampleDoWhile();
+            //se.SampleFor();
+            //se.Foreach();
+            // string mystring = se.JumpStatementExample("Sunday");
+            //Console.WriteLine(mystring);
+            //bottlessong();
+            //se.SampleDays(DaysOfWeek.Sun);
+            //se.SampleDays(DaysOfWeek.Thur);
+            //se.SampleYear(MonthsOfYear.Apr);
+            //se.SampleYear(MonthsOfYear.Jan);
+            // se.SampleYear(MonthsOfYear.Sep);
 
 
 
@@ -51,9 +79,9 @@ namespace classwork
         }
         static void bottlessong()
         {
-           BottlesOfBeer beer = new BottlesOfBeer();
-           string song = beer.BottlesOfBeerSong();
-           Console.WriteLine(song);
+            BottlesOfBeer beer = new BottlesOfBeer();
+            string song = beer.BottlesOfBeerSong();
+            Console.WriteLine(song);
         }
 
 
