@@ -1,5 +1,6 @@
 ﻿using System;
 using Lessons;
+using Quize;
 
 
 namespace classwork
@@ -22,8 +23,11 @@ namespace classwork
             //MyNumericExamples();
             //MyStringExample();
             //StatementSamples();
-            HouseSample();
+            // HouseSample();
             //StructSample();
+            Quize();
+
+
 
 
 
@@ -34,6 +38,13 @@ namespace classwork
             BookSample bookSample = new BookSample(4.99m, "Zombie Fallout", "Mark Tufo");
             Console.WriteLine("The book " + bookSample.title + " by " + bookSample.author + " is $" + bookSample.price);
 
+
+        }
+
+        static void Printer()
+
+        {
+            printer myPrinter = new printer("multiple wire", "for Laptop");
 
         }
         static void HouseSample()
@@ -72,6 +83,8 @@ namespace classwork
             //se.SampleYear(MonthsOfYear.Apr);
             //se.SampleYear(MonthsOfYear.Jan);
             // se.SampleYear(MonthsOfYear.Sep);
+
+
 
 
 
@@ -117,6 +130,7 @@ namespace classwork
             myTypes.comparisonOperators();
 
 
+
         }
         static void otherNumericExamples()
         {
@@ -124,6 +138,23 @@ namespace classwork
             myTypes.OtherOperators();
 
         }
+        public static void Quize()
+
+        {
+            QuizeClass1 myGrade = new QuizeClass1();
+            string Grade = myGrade.SampleGrade("E");
+            Console.WriteLine(Grade);
+            myGrade.QuizeMath();
+        }
+        public static void QuizeMath()
+        {
+
+        }
+
+
+
+
+
 
 
 
