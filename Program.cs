@@ -13,7 +13,7 @@ namespace classwork
 
         static void Main(string[] args)
         {//static  means no copies it is only one.
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
             /* console is a class and writeline is a method with a 
             parameter*/
             //printer myPrinter= new printer();
@@ -25,12 +25,28 @@ namespace classwork
             //StatementSamples();
             // HouseSample();
             //StructSample();
-            Quize();
+            //Quize();
+            FruitSample();
+
+        }
+
+        static void FruitSample()
+
+        {
+            Apple myApple = new Apple();
+            myApple.EatFruit();
 
 
+            Fruit myFruit = new Apple();
+            myFruit.EatFruit();
+            myApple.Cobbler();
 
+            Orange myOrange = new Orange();
+            myOrange.EatFruit();
 
-
+            RanchStyle ranch = new RanchStyle("Stone", "Triple Pane", "Composite", "Blue");
+            ranch.OpenDoor();
+            Console.WriteLine(ranch.Roof);
         }
         static void StructSample()
 

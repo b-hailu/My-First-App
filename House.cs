@@ -45,13 +45,9 @@ namespace classwork
         public House() { }
 
         public House(string foundation, string window)
+        : this(foundation, window, "shingles", "Green")
+        { }
 
-        {
-            this._foundation = foundation;
-            this._window = window;
-            Roof = "Shingles";
-            PaintDoor = "Green";
-        }
         public House(string foundation, string window, string roof, string doorPaint)
         {
 
