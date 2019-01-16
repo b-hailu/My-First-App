@@ -26,9 +26,46 @@ namespace classwork
             // HouseSample();
             //StructSample();
             //Quize();
-            FruitSample();
+            //FruitSample();
+            //ParamSample();
+            ModifierExamples();
 
         }
+
+        static void ModifierExamples()
+
+        {
+            int test = 14;
+            Lesson11 myLesson = new Lesson11();
+            myLesson.RefSample(ref test);
+            Console.WriteLine(test);
+            string first, second, middle;
+            myLesson.OutSample("John Doe", out first, out middle, out second);
+
+            Console.WriteLine(first);
+            Console.WriteLine(middle);
+            Console.WriteLine(middle);
+
+        }
+        static void ParamSample()
+
+        {
+            Lesson11 lesson = new Lesson11();
+            lesson.UseParamas(10, 3, 24, 36, 45, 120);
+            lesson.UseParamas();
+            int[] intArray = { 2, 3, 4, 5, 6 };
+
+            lesson.UseParamas(intArray);
+            lesson.UseParamas2(1, "happy", false, 34.5F);
+
+            lesson.Optionalparam("Bella");
+            lesson.Optionalparam("Mark", 19);
+
+
+
+        }
+
+
 
         static void FruitSample()
 
