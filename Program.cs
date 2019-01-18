@@ -28,7 +28,55 @@ namespace classwork
             //Quize();
             //FruitSample();
             //ParamSample();
-            ModifierExamples();
+            //ModifierExamples();
+            //Lesson12();
+            AbstractDemo();
+
+
+        }
+        static void AbstractDemo()
+
+        {
+            TRex trex = new TRex();
+            Triceratops triceratops = new Triceratops();
+
+            trex.EatFood();
+            trex.Move();
+
+            trex.Swim();
+            trex.Horns();
+
+            trex.SkinType();
+            trex.Teeth();
+
+            triceratops.EatFood();
+            triceratops.Move();
+
+            triceratops.Swim();
+            triceratops.Horns();
+
+            triceratops.SkinType();
+            triceratops.Teeth();
+
+
+
+
+
+
+
+
+
+        }
+
+        static void Lesson12()
+
+        {
+            double temp = Utility.CelsiusToFahrenheit("43.2");
+            Console.WriteLine(temp);
+            double temp2 = Utility.FahrenheitToCelsius("109.76");
+            Console.WriteLine(temp2);
+
+
 
         }
 
@@ -39,11 +87,13 @@ namespace classwork
             Lesson11 myLesson = new Lesson11();
             myLesson.RefSample(ref test);
             Console.WriteLine(test);
+
+
             string first, second, middle;
-            myLesson.OutSample("John Doe", out first, out middle, out second);
+            myLesson.OutSample("John Doe", out first, out second, out middle);
 
             Console.WriteLine(first);
-            Console.WriteLine(middle);
+            Console.WriteLine(second);
             Console.WriteLine(middle);
 
         }

@@ -64,15 +64,7 @@ namespace Lessons
             value = value + 5;
             Console.WriteLine(value);
         }
-        public void OutSample(string name, out string firstname, out string lastname)
-        {
-            int myIndex = name.LastIndexOf(' ');
-            firstname = name.Substring(0, myIndex);
-            lastname = name.Substring(myIndex + 1);
-
-        }
         public void OutSample(string name, out string firstname, out string lastname, out string middle)
-
 
         {
             int myIndex = name.IndexOf(' ');
@@ -86,6 +78,8 @@ namespace Lessons
 
 
         }
+
+
 
 
 
