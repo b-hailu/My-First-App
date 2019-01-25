@@ -13,24 +13,70 @@ namespace classwork
 
         static void Main(string[] args)
         {//static  means no copies it is only one.
-            //Console.WriteLine("Hello World!");
-            /* console is a class and writeline is a method with a 
-            parameter*/
-            //printer myPrinter= new printer();
-            //myPrinter.ConnectCable = "connect";
-            //myPrinter.Cablewired();
-            //Console.WriteLine(myPrinter.ConnectCable);
-            //MyNumericExamples();
-            //MyStringExample();
-            //StatementSamples();
-            // HouseSample();
-            //StructSample();
-            //Quize();
-            //FruitSample();
-            //ParamSample();
-            //ModifierExamples();
-            //Lesson12();
-            AbstractDemo();
+         //Console.WriteLine("Hello World!");
+         /* console is a class and writeline is a method with a 
+         parameter*/
+         //printer myPrinter= new printer();
+         //myPrinter.ConnectCable = "connect";
+         //myPrinter.Cablewired();
+         //Console.WriteLine(myPrinter.ConnectCable);
+         //MyNumericExamples();
+         //MyStringExample();
+         //StatementSamples();
+         // HouseSample();
+         //StructSample();
+         //Quize();
+         //FruitSample();
+         //ParamSample();
+         //ModifierExamples();
+         //Lesson12();
+         //AbstractDemo();
+         //deconstructSample();
+         // FinalizerSample();
+         //IndexerSample();
+            PartialSample();
+
+
+        }
+        static void PartialSample()
+        {
+            Pear pear = new Pear("Yellow");
+
+        }
+        static void IndexerSample()
+        {
+            IndexerExamples myIndexer = new IndexerExamples();
+            myIndexer[3] = 155;
+            myIndexer[0] = 600000;
+            myIndexer[4] = 1000;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Value {0} = {1}", i, myIndexer[i]);
+            }
+
+
+
+        }
+
+        static void FinalizerSample()
+        {
+            FinalizerExample finalExample = new FinalizerExample("Bella", "Hailu");
+
+
+
+        }
+        static void deconstructSample()
+        {
+            string first = "Fikadu", last = "Dessalegn";
+
+            Lesson13 lesson = new Lesson13("Bella", "Hailu");
+            Console.WriteLine("First Name = {0} and Last Name = {1}", first, last);
+
+            lesson.Deconstruct(out first, out last);
+            Console.WriteLine("First Name = {0} and Last Name = {1}", first, last);
+
+
+
 
 
         }
@@ -57,14 +103,6 @@ namespace classwork
 
             triceratops.SkinType();
             triceratops.Teeth();
-
-
-
-
-
-
-
-
 
         }
 
