@@ -34,8 +34,50 @@ namespace classwork
          //deconstructSample();
          // FinalizerSample();
          //IndexerSample();
-            PartialSample();
+         //PartialSample();
+         //AnotherHouseExample();
+         //GenericSample();
+            CollectionSample();
 
+
+        }
+
+        static void CollectionSample()
+        {
+            CollectionExamples ce = new CollectionExamples();
+            ce.MyArrayListExample();
+            ce.MyListExample();
+
+        }
+        static void GenericSample()
+        {
+            GenericList<int> myList = new GenericList<int>();
+            myList.Add(10);
+
+            GenericList<string> mySecondList = new GenericList<string>();
+            mySecondList.Add("Happy");
+
+            GenericList<TRex> myTRexList = new GenericList<TRex>();
+            myTRexList.Add(new TRex());
+
+
+            //Console.WriteLine("myList");
+
+        }
+
+        static void AnotherHouseExample()
+        {
+            House myHouse = new House()
+            {
+                Roof = "Shingle",
+                window = "Double Pane",
+                PaintDoor = "Red",
+                Foundation = "Conceret"
+
+
+            };
+
+            Console.WriteLine("My windows choice is {0}", myHouse.window);
 
         }
         static void PartialSample()
