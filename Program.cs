@@ -37,8 +37,26 @@ namespace classwork
          //PartialSample();
          //AnotherHouseExample();
          //GenericSample();
-            CollectionSample();
+         //CollectionSample();
+         //LabTest();
+            ConversionSample();
 
+
+        }
+        public static void ConversionSample()
+        {
+
+
+            Conversions CV = new Conversions();
+            CV.Length();
+        }
+        public static void LabTest()
+        {
+            LabResults LR = new LabResults();
+            LR.Voltage = 60;
+            LR.Current = 20;
+            LR.Resistance = 60 / 20;
+            LR.ResultsLab();
 
         }
 
