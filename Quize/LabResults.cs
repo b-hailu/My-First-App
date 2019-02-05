@@ -5,24 +5,38 @@ namespace Quize
     public class LabResults
 
     {
-        public int Voltage;
-        public int Current;
-        public int Resistance;
+        public double Voltage;
+        public double Current;
+        public double Resistance;
 
-        public void ResultsLab()
+        public void CercuiteCalc()
         {
-            int V = Voltage;
-            int I = Current;
-            int R = Resistance;
-            V = I * R;
-            I = V / R;
-            R = V / I;
-            Console.WriteLine("The Value of the voltage is " + V);
-            Console.WriteLine("The Value of  current is " + I);
-            Console.WriteLine("The Value of Resistance is " + R);
+         
+         
+         
+          double V = Current * Resistance;
+          double I = Voltage / Resistance;
+          double R = Voltage/ Current;
+          Console.WriteLine("The Value of the Voltage is {0} \n the Value of the Current is {1} \n the Value of  the Resistance is {2}"  , V, I, R);
 
+          
+
+
+         
         }
 
+           
 
+       
+            
+            
+            
+
+           
+          }
+
+        
     }
-}
+
+
+    
