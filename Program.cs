@@ -38,26 +38,64 @@ namespace classwork
          //AnotherHouseExample();
          //GenericSample();
          //CollectionSample();
-         //LabTest();
-            ConversionSample();
+           // LabTest();
+           //ConversionSample();
+           //MeasurementSample();
+           TVModelSample();
 
+
+        }
+        public static void TVModelSample()
+        {
+         HD h = new HD(55, 3500);
+         h.size = 55;
+         h.price = 3500;
+         h.ports = 3;
+         h.mountable = false;
+         h.TvOnOf("physical remote");
+         //h.WallMounted();
+
+         Samsung S = new Samsung(60, 4000);
+         S.TvOnOf("Smart App");
+         S.size = 60;
+         S.price = 4000;
+         S.ports = 5;
+         S.mountable = true;
+         
+        // S.WallMounted();
+
+         Console.WriteLine("The HD TV model is {0}inch \n sale price is ${1}\n has {2}ports \n {3} ", h.size, h.price, h.ports, h.mountable);
+         Console.WriteLine("My Samsung TV model is {0}inch \n sale price is ${1}\n has {2}ports \n{3}", S.size, S.price, S.ports, S.mountable);
+
+
+        
 
         }
         public static void ConversionSample()
         {
-
+         
 
             Conversions CV = new Conversions();
+            CV.MilliMeter = 304.8;
+            CV.Meter = 0.3048;
+            CV.Centimeter = 30.48;
+            CV.inches = 12;
+            CV.yard = 0.33333333333;
+            CV.Feet = 2.00;
             CV.Length();
         }
-        public static void LabTest()
-        {
-            LabResults LR = new LabResults();
-            LR.Voltage = 60;
-            LR.Current = 20;
-            LR.Resistance = 60 / 20;
-            LR.ResultsLab();
 
+            public static void LabTest()
+            
+        {
+            
+            LabResults LR = new LabResults();
+            LR.Voltage = 50;
+            LR.Current = 10;
+            LR.Resistance = 10.5;
+            
+             LR.CercuiteCalc();
+             
         }
 
         static void CollectionSample()
