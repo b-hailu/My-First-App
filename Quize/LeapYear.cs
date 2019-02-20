@@ -7,9 +7,8 @@ namespace Quize
     {
        
         public void YearValidate()
-     
-     
-        {
+
+     {
              int Year = 2019;
              
          if (Year % 400 == 0 || (Year % 100 != 0 && (Year % 4 == 0))) 
@@ -21,11 +20,7 @@ namespace Quize
             Console.WriteLine("is not a Leap Year");
          }
          
-          
-         
-                  
-          
-        }
+     }
     }
 }
 
