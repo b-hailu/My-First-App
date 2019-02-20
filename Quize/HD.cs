@@ -4,41 +4,36 @@ namespace Quize
 {
     public class HD : ITelevisions
     {
-        public HD(int big, int sale, int cable, bool mountable)
+        string _remote;
+        public HD(int big, float price, int cable, string remote, bool mountable)
         {
             this.size = size;
             this.price = price;
             this.ports = ports;
             this.mountable = mountable;
+            this._remote = remote;
 
         }
-        public HD(int size, int ports)
-        {
+        public HD(int size, int ports){}
 
+       public string remote{get; set;} 
 
-        }
-        public int size { get; set; }
+       public int size { get; set; }
 
-        public int price { get; set; }
+        public float price { get; set; }
 
         public int ports { get; set; }
 
-        public bool mountable { get; set; } = false;
+        
 
-        public void TvOnOf(string Remote)
+        public bool mountable { get; set; } = true ||false;
+
+        public void TvOnOf()
         {
-          Console.WriteLine("The TV is on  using Physical Remote");
+          Console.WriteLine("The HD TV is on  using Physical Remote");
 
         }
-        public void WallMounted()
-        {
-            bool mount = true || false;
-         if (mount == false)
-         {
-            Console.WriteLine("Need TV Stands"); 
-         }
-
-        }
+       
         
 
 

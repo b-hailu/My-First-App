@@ -7,7 +7,7 @@ namespace Quize
     {
          
          int size { get; set; } 
-         int price { get; set; }
+         float price { get; set; }
          int ports { get; set; }
          bool mountable { get; set; }
         
