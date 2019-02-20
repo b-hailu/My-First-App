@@ -41,36 +41,60 @@ namespace classwork
            // LabTest();
            //ConversionSample();
            //MeasurementSample();
-           TVModelSample();
+           //TVModelSample();
+          //ValidateLeapYear();
+            LEDTVModel();
 
 
         }
+        public static void LEDTVModel()
+        {
+         LEDTV led = new LEDTV(50, 2500.50F, 2, true, "Remote");
+         led.Size = 50;
+         led.Price = 2500.50F;
+         led.Ports = 2;
+         led.Mountable = true;
+         led.Remote = "Physical Remote and Smart App";
+         led.TVModel();
+         Console.WriteLine("the size is {0} inch\n the price is ${1}\n has {2} ports\nis mountable- {3}\n and also {4}", led.Size,led.Price,led.Ports,led.Mountable, led.Remote);
+        }
+
+        public static void ValidateLeapYear()
+        {
+        LeapYear lp = new LeapYear();
+         lp.YearValidate();
+         
+        }
+
         public static void TVModelSample()
         {
          HD h = new HD(55, 3500);
+         
          h.size = 55;
          h.price = 3500;
          h.ports = 3;
          h.mountable = false;
-         h.TvOnOf("physical remote");
-         //h.WallMounted();
+         h.remote = "Uses PhysicalRemote";
+         
+         
 
-         Samsung S = new Samsung(60, 4000);
-         S.TvOnOf("Smart App");
+         ForKTeve S = new ForKTeve(60, 4000);
+         
          S.size = 60;
          S.price = 4000;
          S.ports = 5;
+         S.remote = "Uses Smart App";
          S.mountable = true;
+         S.TvOnOf();
          
-        // S.WallMounted();
+         Console.WriteLine("My HD TV model is {0}inch \n sale price ${1}\n also has {2}ports \n is mountable-{3}\n{4} ", h.size, h.price, h.ports, h.mountable, h.remote);
+         Console.WriteLine("My ForKTeve model is {0}inch \n sale price is ${1}\n has {2}ports \n is mountable-{3} \n{4}", S.size, S.price, S.ports, S.mountable, S.remote);
 
-         Console.WriteLine("The HD TV model is {0}inch \n sale price is ${1}\n has {2}ports \n {3} ", h.size, h.price, h.ports, h.mountable);
-         Console.WriteLine("My Samsung TV model is {0}inch \n sale price is ${1}\n has {2}ports \n{3}", S.size, S.price, S.ports, S.mountable);
 
+        }
 
         
 
-        }
         public static void ConversionSample()
         {
          

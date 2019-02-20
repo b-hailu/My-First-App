@@ -87,7 +87,7 @@ namespace Quize
 
         }
         public void TVModel()
-        
+
         {
          Console.WriteLine("This is your LEDTV");
         }
