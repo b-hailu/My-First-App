@@ -1,6 +1,7 @@
 ﻿using System;
 using Lessons;
 using Quize;
+using Advanced;
 
 
 namespace classwork
@@ -10,94 +11,192 @@ namespace classwork
     //has no access modifier.if ther is no access modefier it is a default.
     {
 
+        public delegate void TryOn(string type);
 
         static void Main(string[] args)
-        {//static  means no copies it is only one.
-         //Console.WriteLine("Hello World!");
-         /* console is a class and writeline is a method with a 
-         parameter*/
-         //printer myPrinter= new printer();
-         //myPrinter.ConnectCable = "connect";
-         //myPrinter.Cablewired();
-         //Console.WriteLine(myPrinter.ConnectCable);
-         //MyNumericExamples();
-         //MyStringExample();
-         //StatementSamples();
-         // HouseSample();
-         //StructSample();
-         //Quize();
-         //FruitSample();
-         //ParamSample();
-         //ModifierExamples();
-         //Lesson12();
-         //AbstractDemo();
-         //deconstructSample();
-         // FinalizerSample();
-         //IndexerSample();
-         //PartialSample();
-         //AnotherHouseExample();
-         //GenericSample();
-         //CollectionSample();
-           // LabTest();
-           //ConversionSample();
-           //MeasurementSample();
-           //TVModelSample();
-          ValidateLeapYear();
+
+
+        {
+            //static  means no copies it is only one.
+            //Console.WriteLine("Hello World!");
+            /* console is a class and writeline is a method with a 
+            parameter*/
+            //printer myPrinter= new printer();
+            //myPrinter.ConnectCable = "connect";
+            //myPrinter.Cablewired();
+            //Console.WriteLine(myPrinter.ConnectCable);
+            //MyNumericExamples();
+            //MyStringExample();
+            //StatementSamples();
+            // HouseSample();
+            //StructSample();
+            //Quize();
+            //FruitSample();
+            //ParamSample();
+            //ModifierExamples();
+            //Lesson12();
+            //AbstractDemo();
+            //deconstructSample();
+            // FinalizerSample();
+            //IndexerSample();
+            //PartialSample();
+            //AnotherHouseExample();
+            //GenericSample();
+            //CollectionSample();
+            // LabTest();
+            //ConversionSample();
+            //MeasurementSample();
+            //TVModelSample();
+            //ValidateLeapYear();
             //LEDTVModel();
+            //Orders();
+            //RaduExample();
+            //CostCarepet();
+            //NumOne();
+            //NumbCalculate();
+            //DelegateSample();
+            //MultiDelegateSample();
+            //EventSample();
+            LambdaSample();
+
+        }
+
+        private static void LambdaSample()
+        {
+            LambdaExample mylambda = new LambdaExample();
+            Console.WriteLine(mylambda.MyLambdaOne(5));
+        }
+
+        private static void EventSample()
+        {
+            Coats myCoat = new Coats();
+            string result = myCoat.MyResult;
+            Console.WriteLine(result);
+        }
+        private static void MultiDelegateSample()
+        {
+            Hats moreHats = new Hats(7);
+            TryOn someHats, niceHats, sadHats;
+
+            niceHats = moreHats.FindLuckyHaty;
+            niceHats("Top");
+
+            sadHats = moreHats.FindLuckyHaty;
+            sadHats("Dunce");
+
+            someHats = niceHats + sadHats;
+            someHats("Cowboy");
+        }
+
+        private static void DelegateSample()
+        {
+            Hats myHat = new Hats("CowBoy", 7);
+            TryOn theHat = myHat.TryOnHat;
+            theHat("I tried on a  " + myHat.HatType + "hat that was size " + myHat.HatSize);
+
+            Hats mySecondHat = new Hats();
+        }
+
+
+
+
+        public static void NumbCalculate()
+        {
+            Number1 numb = new Number1();
+            numb.Calculation();
+        }
+
+        public static void NumOne()
+        {
+            numbers N = new numbers();
+            N.OneNum();
+
+        }
+
+        public static void CostCarepet()
+
+        {
+            CarepetCost cost = new CarepetCost();
+            cost.Cost1();
+            cost.length = 12;
+            cost.width = 9;
+
+        }
+
+        public static void RaduExample()
+
+        {
+            Radius1 rad = new Radius1();
+            rad.RadiusExample();
 
 
         }
+
+        public static void Orders()
+
+        {
+            practice1 pra = new practice1();
+            pra.ReverseOrder();
+            pra.TriangleWidth();
+            pra.firstname = "Belaynesh";
+            pra.lastname = "Hailu";
+            pra.printMyName();
+            Console.WriteLine("Your First Name is {0}\n LastName is {1}", pra.firstname, pra.lastname);
+            pra.NumberAdding();
+
+        }
+
         public static void LEDTVModel()
         {
-         LEDTV led = new LEDTV(50, 2500.50F, 2, true, "Remote");
-         led.Size = 50;
-         led.Price = 2500.50F;
-         led.Ports = 2;
-         led.Mountable = true;
-         led.Remote = "Physical Remote and Smart App";
-         led.TVModel();
-         Console.WriteLine("the size is {0} inch\n the price is ${1}\n has {2} ports\nis mountable- {3}\n and also {4}", led.Size,led.Price,led.Ports,led.Mountable, led.Remote);
+            LEDTV led = new LEDTV(50, 2500.50F, 2, true, "Remote");
+            led.Size = 50;
+            led.Price = 2500.50F;
+            led.Ports = 2;
+            led.Mountable = true;
+            led.Remote = "Physical Remote and Smart App";
+            led.TVModel();
+            Console.WriteLine("the size is {0} inch\n the price is ${1}\n has {2} ports\nis mountable- {3}\n and also {4}", led.Size, led.Price, led.Ports, led.Mountable, led.Remote);
         }
 
         public static void ValidateLeapYear()
         {
-        LeapYear lp = new LeapYear();
-         lp.YearValidate();
-         
+            LeapYear lp = new LeapYear();
+            lp.YearValidate();
+
         }
 
         public static void TVModelSample()
         {
-         HD h = new HD(55, 3500);
-         
-         h.size = 55;
-         h.price = 3500;
-         h.ports = 3;
-         h.mountable = false;
-         h.remote = "Uses PhysicalRemote";
-         
-         
+            HD h = new HD(55, 3500);
 
-         ForKTeve S = new ForKTeve(60, 4000);
-         
-         S.size = 60;
-         S.price = 4000;
-         S.ports = 5;
-         S.remote = "Uses Smart App";
-         S.mountable = true;
-         S.TvOnOf();
-         
-         Console.WriteLine("My HD TV model is {0}inch \n sale price ${1}\n also has {2}ports \n is mountable-{3}\n{4} ", h.size, h.price, h.ports, h.mountable, h.remote);
-         Console.WriteLine("My ForKTeve model is {0}inch \n sale price is ${1}\n has {2}ports \n is mountable-{3} \n{4}", S.size, S.price, S.ports, S.mountable, S.remote);
+            h.size = 55;
+            h.price = 3500;
+            h.ports = 3;
+            h.mountable = false;
+            h.remote = "Uses PhysicalRemote";
+
+
+
+            ForKTeve S = new ForKTeve(60, 4000);
+
+            S.size = 60;
+            S.price = 4000;
+            S.ports = 5;
+            S.remote = "Uses Smart App";
+            S.mountable = true;
+            S.TvOnOf();
+
+            Console.WriteLine("My HD TV model is {0}inch \n sale price ${1}\n also has {2}ports \n is mountable-{3}\n{4} ", h.size, h.price, h.ports, h.mountable, h.remote);
+            Console.WriteLine("My ForKTeve model is {0}inch \n sale price is ${1}\n has {2}ports \n is mountable-{3} \n{4}", S.size, S.price, S.ports, S.mountable, S.remote);
 
 
         }
 
-        
+
 
         public static void ConversionSample()
         {
-         
+
 
             Conversions CV = new Conversions();
             CV.MilliMeter = 304.8;
@@ -109,17 +208,17 @@ namespace classwork
             CV.Length();
         }
 
-            public static void LabTest()
-            
+        public static void LabTest()
+
         {
-            
+
             LabResults LR = new LabResults();
             LR.Voltage = 50;
             LR.Current = 10;
             LR.Resistance = 10.5;
-            
-             LR.CercuiteCalc();
-             
+
+            LR.CercuiteCalc();
+
         }
 
         static void CollectionSample()
