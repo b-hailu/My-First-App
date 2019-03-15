@@ -25,15 +25,7 @@ namespace Quize
          
         }
 
-           
-
-       
-            
-            
-            
-
-           
-          }
+    }
 
         
     }

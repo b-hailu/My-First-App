@@ -25,16 +25,7 @@ namespace Quize
             
 
         Console.WriteLine(" the value of the conversion feet to Millimeter is {0}ml \n feet to Meter is {1}m \n feet to Centimeter is {2}cm \n feet to inches is {3}inch \n feet to yard is {4}y",  ml, m, cm,inch, y);
-           // Console.WriteLine("feet to Meter  " + ml);
-           // Console.WriteLine(" 1 feet * Centimeter  " + cm);
-            //Console.WriteLine(" 1 feet * Inches " + inch);
-            //Console.WriteLine(" 1 feet * yard  " + y);
-
-        
-
-       
-         
-       
+           
         }
     }
 
